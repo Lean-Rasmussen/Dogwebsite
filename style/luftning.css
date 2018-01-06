@@ -1,0 +1,61 @@
+.luftning__container{
+	display: grid;
+	grid-template-columns: 20px 1fr 1fr 20px;
+	grid-gap: 1em;
+	height: 75%;
+
+}
+
+.luftning__img{
+	grid-area: 1/3/2/4;
+	height: 100%; 
+	width: 100%; 
+	border-radius: 50%;
+}
+
+.luftning_text{
+	grid-area: 1/2/2/3;
+	color: white;
+	text-align: left;
+
+}
+.hunde-train__container{
+	display: grid;
+	grid-template-columns: 20px 1fr 1fr 20px;
+	grid-gap: 1em;
+
+}
+
+.hunde-train__puppy__img{
+	grid-area: 1/3/2/4;
+	height: 100%; 
+	width: 100%; 
+}
+
+.hundet-train__puppy__text{
+	grid-area: 1/2/2/3;
+	color: white;
+
+}
+
+.hunde-train__unge__img{
+	grid-area: 1/3/2/4;
+	height: 100%; 
+	width: 100%; 
+}
+
+.hunde-train__unge__text{
+	grid-area: 1/2/2/3;
+	color: white;
+
+}
+
+.hunde-train__pro__img{
+	grid-area: 1/3/2/4;
+	height: 100%; 
+	width: 100%; 
+}
+
+.hunde-train__pro__text{
+	grid-area: 1/2/2/3;
+	color: white;

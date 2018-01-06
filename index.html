@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Gladehaler</title>
+	<link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src='src/jquery.fullPage.min.js'></script>
+	<script type="text/javascript" src='src/slideshow.js'></script>
+	<script type="text/javascript" src='src/navigation.js'></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src='App.js'></script>
+</head>
+	<header class="header">
+		<nav class="navigation"> 
+			<a href="#landing-page" class="header__logo">
+				<img class="header__logo" src="img/logo.PNG" alt="logo af en corgi">
+			</a>
+			<ul class="navigation--menu close-nav-burger">
+				<li class="navigation__info">
+					<a href="#om-os-page" class="navigation__menuitem--link">Hvem er gladehaler</a>
+				</li>
+				<li class="navigation__cources navigation__cources--dropdown">
+					<a href="#hundetraining-page" class="navigation__menuitem--link"> Trænings hold </a> 
+				</li>
+				<li class="navigation__luftning"> 
+					<a href="#hundeluftning-page" class="navigation__menuitem--link">Hundeluftning</a>
+				</li>
+				<li class="navigation__pictures" >
+					<a href="#galleri-page" class="navigation__menuitem--link">Galleri</a>
+				</li>
+			</ul>
+			<div id="navigation--burger" onclick="openBurger()">
+				<div id="menu" class="navigation--burger--main" >
+					<span class="navigation--burger--line line01"></span>
+					<span class="navigation--burger--line line02"></span>
+					<span class="navigation--burger--line line03"></span>
+				</div>
+			</div>
+		</nav>
+	</header>
+<body class="main-container">
+	<main id="wrapper" class="main-content-container">
+
+		<!-- Landing page-->
+		<div>
+
+		</div>
+		<section class="section" data-anchor='landing-page'>
+			<div class="landing-page">
+
+				<!-- Image slideshow-->
+				<div class="main__slideshow-container main__slideshow__slide1">
+					<div class="main__slideshow--myslide main__slideshow__slide1">
+						<!--<img class="main__slideshow__img" src="img/dog1.jpg">-->
+								<p class="main__slideshow__caption">text til hund1</p>
+						</div>
+							<div class="main__slideshow--myslide">
+								<!--<img class="main__slideshow__img" src="img/dog2.jpg">-->
+								<p class="main__slideshow__caption">text til hund2</p>
+							</div>
+							<div class="main__slideshow--myslide ">
+								<!--<img class="main__slideshow__img" src="img/dog3.jpg">-->
+								<p class="main__slideshow__caption">text til hund3</p>
+							</div>
+							<div class="main__slideshow__dot-container">
+								<span class="main__slideshow__dot active" ></span> 
+								<span class="main__slideshow__dot" ></span> 
+								<span class="main__slideshow__dot" ></span> 
+							</div>
+						</div>
+
+					<!-- text bobler-->
+				<div class="landing-page--infobobble--container">
+					<div class="landing-page--infobobble topleft">
+						<p class="landing-page--infobobble--text"> Eksermineret hunde og klikker instruktør</p>
+					</div>
+					<div class="landing-page--infobobble topright">
+						<p class="landing-page--infobobble--text"> Hundetrøning på alle nivauer og for hunde i alle aldre</p>
+					</div>	
+					<div class="landing-page--infobobble botleft">
+						<p class="landing-page--infobobble--text "> Hundetræning og mulighed for hundeluftning</p>
+					</div>				
+					<div class="landing-page--infobobble botright">
+						<p class="landing-page--infobobble--text "> Træning runde i Rødovre i forskellige miljøer</p>
+					</div>
+			</div>
+		</section>
+
+		<!-- Hvem er Gladehaler-->
+
+		<!-- hundetraening-->
+		<section class="hunde-train section" data-anchor='hundetraining-page'>
+			<div class=" hunde-train__puppy  slide">
+				<div class="hunde-train__container">
+					<div class="hundet-train__puppy__text">
+						<h1>Hunde Traening hvalpe</h1>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						<p>pris 999 kr</p>	
+						<button>Tilmeld</button>
+					</div>
+					<img class="hunde-train__puppy__img" src="img/dog3.jpg">		
+				</div>
+				<div class=" hunde-train__unge  slide">
+					<div class="hunde-train__container">
+						<div class="hunde-train__unge__text">
+							<h1>Hunde Traening unge</h1>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+							<p>pris 999 kr</p>	
+							<button>Tilmeld</button>
+						</div>
+						<img class="hunde-train__unge__img" src="img/dog1.jpg">	
+					</div>	
+				</div>
+				<div class=" hunde-train__pro  slide">
+					<div class="hunde-train__container">
+						<div class="hunde-train__pro__text">
+							<h1>Hunde Traening pro</h1>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>pris 1500 kr</p>	
+							<button>Tilmeld</button>
+						</div>
+						<img class="hunde-train__pro__img" src="img/dog2.jpg">	
+					</div>	
+				</div>
+			</div>
+		</section >
+
+
+		<!-- Hunde lufning -->
+		<section class="luftning  section" data-anchor="hundeluftning-page">
+			<div class="luftning__container">
+				<img class="luftning__img" src="img/dog4.jpg">
+				<div class="luftning_text">
+					<h1>Luftning</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<button>Tilmeld</button>
+
+				</div>
+			</div>
+		</section >
+		<section class="about-us  section" data-anchor='om-os-page'>
+			<div class="omos__container">
+				<div class="omos_text">
+					<h1>Om os</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>	
+				</div>
+				<img class="omos__img" src="img/dog3.jpg">
+			</div>
+		</section >
+	</main>
+
+
+	<footer class="footer">
+		<p class="footer__kontakt_info"> kontakt Michala paa  mobil :12345678 eller email: gladehaler@gmail.com</p>
+		<p>facebook</p>
+		<p>snapchat</p>
+	 </footer>
+
+</body>
+
+</html>

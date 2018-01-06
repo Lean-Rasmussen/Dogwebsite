@@ -1,0 +1,117 @@
+.section{
+	/* has to be moved elsewhere*/
+	background-color: #547980;
+}
+
+.landing-page{
+	background-color: #547980;
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 1fr 1.5fr;
+}
+/* slideshow*/
+.main__slideshow-container{
+	width:80%;
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5px;
+	transition: background-color 0.2s ease;
+
+}
+/* slideshow test*/
+.main__slideshow__slide1{
+	background-image: url(../img/dog1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main__slideshow__slide2{
+	background-image: url(../img/dog2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main__slideshow__slide3{
+	background-image: url(../img/dog3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	/*dot*/
+.main__slideshow__dot-container{
+	position: absolute;
+	bottom: 10px;
+	left: 40%;
+}
+
+	/* caption*/
+
+.main__slideshow__caption{
+	color: white;
+	font-size: 1.75em;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.main__slideshow__dot{
+	height: 13px;
+	width: 13px;
+	margin:0 2px;
+	background-color: #ccc;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.2s ease;
+}
+
+.main__slideshow__dot.active{
+	background-color: white;
+}
+
+
+/*text boobles*/
+
+.landing-page--infobobble--container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: auto;
+	grid-gap: 5px;
+	padding-bottom: 10px;
+	height: 80%
+}
+.landing-page--infobobble{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background-color: white;
+	text-align: center;
+
+}
+/* flower pattern in info bobbles*/
+.topleft{
+	border-bottom-right-radius: 10px;
+}
+.topright{
+	border-bottom-left-radius: 10px;
+}
+
+.botleft{
+	border-top-right-radius: 10px;
+}
+
+.botright{
+	border-top-left-radius: 10px;
+}
+
+.landing-page--infobobble--text{
+	display: block;
+	position: relative;
+	top:50%;
+	transform: translateY(-80%);
+	margin-left: auto;
+  	margin-right: auto
+
+}
+
+
