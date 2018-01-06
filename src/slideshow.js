@@ -4,7 +4,7 @@ var dots = $(".main__slideshow__dot");
 function removeBackground (n){
   var currentSlide = "main__slideshow__slide"+n;
   $(".main__slideshow-container").removeClass(currentSlide);
-  $('.active').removeClass('active');
+  $('.active-dot').removeClass('active-dot');
 }
 function addBackground (n){
   $(".main__slideshow-container").addClass("main__slideshow__slide"+n);
@@ -16,14 +16,14 @@ function slideshowCarousel(){
     removeBackground(slideIndex);
     slideIndex+=1;
     addBackground(slideIndex);
-    $(dots[slideIndex-1]).addClass("active");
+    $(dots[slideIndex-1]).addClass("active-dot");
     setTimeout(slideshowCarousel, 3000);  
   }
   else{
     removeBackground(slideIndex);
     slideIndex=1;
     addBackground(slideIndex);
-    $(dots[slideIndex-1]).addClass("active");
+    $(dots[slideIndex-1]).addClass("active-dot");
     setTimeout(slideshowCarousel, 3000);  
   }
 }
