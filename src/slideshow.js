@@ -12,20 +12,11 @@ function addBackground (n){
 
 function slideshowCarousel(){
   var dots = $(".main__slideshow__dot");
-  if(slideIndex<=2){
-    removeBackground(slideIndex);
-    slideIndex+=1;
-    addBackground(slideIndex);
-    $(dots[slideIndex-1]).addClass("active-dot");
-    setTimeout(slideshowCarousel, 3000);  
-  }
-  else{
-    removeBackground(slideIndex);
-    slideIndex=1;
-    addBackground(slideIndex);
-    $(dots[slideIndex-1]).addClass("active-dot");
-    setTimeout(slideshowCarousel, 3000);  
-  }
+  removeBackground(slideIndex);
+  slideIndex <=2 ? (slideIndex+=1) : slideIndex =1;
+  addBackground(slideIndex);
+  $(dots[slideIndex-1]).addClass("active-dot");
+  setTimeout(slideshowCarousel, 3000);  
 }
 
 window.onload =function(){
