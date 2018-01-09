@@ -1,7 +1,7 @@
 .navigation{
 	background-color: #7FACAD;
 	top: 0px;
-	position: relative;
+	position: sticky;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -18,6 +18,16 @@
 	.navigation{
 		height: 75px;
 
+	}
+}
+@media(min-width: 1300px){
+	.navigation{
+		position: fixed;
+		height: 100vh;
+		width: 200px;
+		left:0px;
+		top:initial;
+		flex-direction: column;
 	}
 }
 
@@ -37,6 +47,8 @@
 	position: static;
 	}
 }
+
+
 .navigation--menu.close-nav-burger{
 	display: none;
 }
@@ -52,6 +64,12 @@
 		background-color: #7FACAD;
 		font-size: 1.1em;
 
+	}
+}
+@media(min-width: 1300px){
+	.navigation--menu.close-nav-burger, .navigation--menu{
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 }
 
@@ -124,7 +142,11 @@
 		max-width: 150px;
 	}
 }
-
+@media(min-width: 1300px){
+	.header__logo{
+	margin-left: 12.5px;
+	}
+}
 
 /* Navigation burger only visable in mobile display */
 
