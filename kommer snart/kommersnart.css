@@ -1,20 +1,25 @@
-.fade{
-	
+body{
+	background-color: #81b99b;
+	text-align: center;
+	color: black;
+	border-radius: 0%;
+	margin: auto;
+	font-weight: lighter;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.2em;
 }
 
 .backgroundImg{
-	text-align: center;
-	color: white;
-	background: url("IMG_1504.jpg");
+	background: url("logo.JPG");
 	background-repeat: no-repeat;
-	height: 100vh;
-	max-width: 700px;
+	max-width: 500px;
+	height: 500px
 	border-radius: 0%;
-	margin: auto;
 }
 h2 a{
 	text-decoration: none;
 	color: white;
 	text-decoration: underline;
+
 
 }

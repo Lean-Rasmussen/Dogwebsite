@@ -1,5 +1,5 @@
 .navigation{
-	background-color: #7FACAD;
+	background-color: #81B99B;
 	top: 0px;
 	position: sticky;
 	display: flex;
@@ -61,7 +61,7 @@
 		justify-content: flex-end;
 		flex-grow: 1;
 		align-items: end;	
-		background-color: #7FACAD;
+		background-color: #81B99B;
 		font-size: 1.1em;
 
 	}
@@ -85,14 +85,21 @@
 
 @media (min-width: 750px) { 
 	.navigation--menu li{
-		background-color: #29afd1;
+		background-color: #81B99B;
 		padding-right: 20px;
-		border-left: solid black 1px;
-		border-top: solid black 1px;
-		height: 40px;
+		height: 30px;
 		text-align: center;
 	}
 }
+@media (min-width: 1300px) { 
+	.navigation--menu li{
+		width: 100%;
+		margin-top:20px;
+		padding: initial;
+		text-align: left;
+	}
+}
+
 @media(min-width: 750px){
 	.navigation__info{
 		border-top-left-radius: 10px;
@@ -102,7 +109,7 @@
 
 
 .navigation--menu li:hover{
-	background-color: lightyellow;
+	background-color: #559974;
 }
 
 .navigation__menuitem--link:hover{
@@ -151,7 +158,7 @@
 /* Navigation burger only visable in mobile display */
 
 #navigation--burger{
-	background-color:#29afd1;
+	background-color:#559974;
 	cursor: pointer;
 	display: inline-block;
 	border-radius: 33%;
