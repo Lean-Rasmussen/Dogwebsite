@@ -5,7 +5,6 @@
 	grid-gap: 1em;
 	height: 100%;
 	width: 100%;
-
 }
 
 .omos__img{
@@ -24,6 +23,7 @@
 	.hunde-train__container{
 	}
 }
+
 .omos_text{
 	grid-area: 2/2/3/3;
 	color: black;
@@ -32,5 +32,15 @@
 	word-wrap: break-word;
 	hyphens: auto;
 	width:100%;
-
+	transition: transform 1s ease-out;
+	overflow: hidden;
 }
+
+
+.omos_text2{
+	transform: translateX(150%);
+}
+.omos_text3{
+	transform: translateX(300%);
+}
+

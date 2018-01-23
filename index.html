@@ -10,6 +10,7 @@
 	<script type="text/javascript" src='src/jquery.fullPage.min.js'></script>
 	<script type="text/javascript" src='src/slideshow.js'></script>
 	<script type="text/javascript" src='src/navigation.js'></script>
+	<script type="text/javascript" src='src/omOs.js'></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script type="text/javascript" src='App.js'></script>
 </head>
@@ -84,13 +85,20 @@
 		<!-- Hvem er Gladehaler-->
 		<section class="about-us  section" data-anchor='om-os-page'>
 			<div class="omos__container">
-				<div class="omos_text">
+				<div class="omos_text omos_text1">
 					<h1>Velkommen til GladeHaler.</h1>
-					<p> 
-GladeHaler ejes af Michala Arendt Hansen, eksamineret hunde –og klikker instruktør fra Hund&Træning i 2017.
- Jeg har altid haft et stort dyrehjerte med en stor svaghed for hunde.  Jeg tror på, at man kan have et godt samarbejde med sin hund og sammen opleve en masse succes. 
-For mig er det vigtigt at have en glad, velfungerende og stimuleret hund, som har lyst til at samarbejde, og man sammen kan have en masse gode oplevelser.</p> 
-				<button class="omos__text__read-more-button">læs mere om os</button>
+					<p> GladeHaler ejes af Michala Arendt Hansen, eksamineret hunde –og klikker instruktør fra Hund&Træning i 2017.
+					 Jeg har altid haft et stort dyrehjerte med en stor svaghed for hunde.  Jeg tror på, at man kan have et godt samarbejde med sin hund og sammen opleve en masse succes. 
+					For mig er det vigtigt at have en glad, velfungerende og stimuleret hund, som har lyst til at samarbejde, og man sammen kan have en masse gode oplevelser.</p> 
+					<button onclick="OmosViewText2()" class="omos__text__read-more-button">læs mere om os</button>
+				</div>
+				<div class="omos_text2 omos_text">
+					<p>Hos GladeHaler gør jeg en masse for, at vi får trænet disse hverdagsting igennem, forebygget eventuelle problemer og blot have en masse sjove og gode oplevelser sammen med sin hund. Alle er velkomne, og jeg vægter det enormt højt, at det skal være en god oplevelse for alle, hund som ejer.</p> 
+					<button onclick="OmosViewText1()" class="omos__text__read-more-button">tilbage</button> <button onclick="OmosViewText3()" class="omos__text__read-more-button">læs endnu mere</button>
+				</div>
+				<div class="omos_text3 omos_text">
+					<p>Hos GladeHaler gør jeg en masse for, at vi får trænet disse hverdagsting igennem, forebygget eventuelle problemer og blot have en masse sjove og gode oplevelser sammen med sin hund. Alle er velkomne, og jeg vægter det enormt højt, at det skal være en god oplevelse for alle, hund som ejer.</p> 
+					<button onclick="OmosViewText2()" class="omos__text__read-more-button">tilbage</button> <button onclick="OmosViewText1()" class="omos__text__read-more-button">til start info</button>
 				</div>
 				<img class="omos__img" src="img/omos.jpg">
 			</div>
