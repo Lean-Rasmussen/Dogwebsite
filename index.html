@@ -11,6 +11,7 @@
 	<script type="text/javascript" src='src/slideshow.js'></script>
 	<script type="text/javascript" src='src/navigation.js'></script>
 	<script type="text/javascript" src='src/omOs.js'></script>
+	<script type="text/javascript" src='src/tilmeld.js'></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script type="text/javascript" src='App.js'></script>
 </head>
@@ -30,7 +31,7 @@
 					<a href="#hundeluftning-page" class="navigation__menuitem--link">Hundeluftning</a>
 				</li>
 				<li class="navigation__pictures" >
-					<a href="#galleri-page" class="navigation__menuitem--link">Galleri</a>
+					<a href="#tilmeld-page" class="navigation__menuitem--link">Tilmeld</a>
 				</li>
 			</ul>
 			<div id="navigation--burger" onclick="openBurger()">
@@ -134,7 +135,7 @@
 						<h1>Hunde Traening hvalpe</h1>
 						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 						<p>pris 999 kr</p>	
-						<button>Tilmeld</button>
+						<a class="Hunde-train__tilmeld-button" href="#tilmeld-page">Tilmeld</a>
 					</div>
 					<img class="hunde-train__puppy__img" src="img/dog3.jpg">				
 				</div>
@@ -144,7 +145,7 @@
 							<h1>Hunde Traening unge</h1>
 							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 							<p>pris 999 kr</p>	
-							<button>Tilmeld</button>
+							<a class="Hunde-train__tilmeld-button" href="#tilmeld-page">Tilmeld</a>
 						</div>
 						<img class="hunde-train__unge__img" src="img/dog1.jpg">	
 					</div>	
@@ -155,7 +156,7 @@
 							<h1>Hunde Traening pro</h1>
 							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<p>pris 1500 kr</p>	
-							<button>Tilmeld</button>
+							<a class="Hunde-train__tilmeld-button" href="#tilmeld-page">Tilmeld</a>
 						</div>
 						<img class="hunde-train__pro__img" src="img/dog2.jpg">	
 					</div>	
@@ -171,12 +172,55 @@
 				<div class="luftning_text">
 					<h1>Luftning</h1>
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-					<button>Tilmeld</button>
+					<a class="luftning__tilmeld-button" href="#tilmeld-page">Tilmeld</a>
 
 				</div>
 			</div>
 		</section >
-
+		<section class="Tilmeld  section" data-anchor="tilmeld-page">
+			<div class="tilmeld__container">
+				<div class="tilmeld__container__tilmeld-info" >
+					<div>
+						<p>For at tilmelde til hundetrning eller hundeluftning skal vi bruge lidt information fra dig. Kontakt os via en af nedest[ende medtoder med Hundens navn, alder, race, din adress og hvis der er specielle hensyn som skal tages.</p>
+					</div>
+					<div class="tilmeld__container__muligheder">	
+						<div class="tilmeld-form__facebook tilmeld--mulighed" >
+							<a href="https://www.facebook.com/GladeHaler/?hc_ref=ARRBBijw12LOLxhTybB6k_dTqvfs7KVB8-y4q3DusGY23w4HEmvzYsJXyZ-MWT_YhO4&fref=nf" target="_blank">kontakt os via facebook</a>
+						</div>
+						<div class="tilmeld-form__telefon tilmeld--mulighed">
+							<p>kontakt os telefonisk via telefon nummer 12345678</p>
+						</div>
+							<div onclick="tilmeldForm()" class="tilmeld-form__email tilmeld--mulighed">
+								<p>klik her for at sende os en email med informationer</p>
+						</div>
+					</div>
+				</div>
+				<div class="tilmeld__container__tilmeld-form">
+					<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+						<br>	
+						<p>Navn: <input type="text" name="navn"></p>
+						<p>Kontakt nummer: <input type="text" name="Kontakt nummer"></p>
+						<p>Adresse:	<input type="text" name="adresse"></p>
+						<p>Hundes navn: <input type="text" name="Hundens Navn"></p>
+						<p>Hundens race: <input type="text" name="Hundens race"> </p>
+						<p>Hundens alder: <input type="text" name="alder"></p>
+						<p>Særlige hensyn: <input type="text" name="hensyn" size="20"></p>
+						 <p>Kursus: <select name="Kursus">
+							<option value="Hvalpe træning">Hvalpe træning</option>	
+							<option value="Advanceret træning">Advanceret træning</option>	
+							<option value="Pro træning">Pro træning</option>	
+							<option value="Hundeluftning">Hundeluftning</option>	
+						</select> </p>
+						<p>Alle hunde som deltager, skal være dækket under en ansvarsforsikring og være vaccineret</p>
+						<p>Min hun er vaccineret og er dækket af en ansvarsforsikring <input type="checkbox" name="ansvarsforsikring og vaccineret"></p> 
+						<input type="submit" value="Send">
+						<input type="reset" value="Ryd felter">
+					</form>
+					<br>
+					<button onclick="tilmeldStartSide()"> Tilbage</button>
+				</div>
+			</div>
+		</section >
 	</main>
 
 
