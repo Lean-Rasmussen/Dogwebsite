@@ -8,10 +8,23 @@
 	overflow: hidden;
 }
 
+@media (min-width: 750px) {
+	.tilmeld__container{
+	grid-template-columns: 40px 1fr 1fr 40px;
+	grid-template-rows: 40px 1fr 2fr 40px;
+	}
+}
 /* info tilmeldings siden*/
 .tilmeld__container__tilmeld-info{
 	grid-area: 2/2/3/3;
 	transition: transform 1s ease-out;
+}
+
+@media (min-width: 750px) {
+	.tilmeld__container__tilmeld-info{
+	grid-area: 2/2/4/3;
+	transform: translateX(0%);
+	}
 }
 
 .tilmeld__container__muligheder{
@@ -33,4 +46,21 @@
 	grid-area: 1/2/3/3;
 	color: black;
 	text-align: left;
+}
+
+
+@media (min-width: 750px) {
+	.tilmeld__container__tilmeld-form{
+	transform: translateX(0%);
+	grid-area: 2/3/4/4;
+	color: black;
+	text-align: left;
+	}
+}
+
+
+@media (min-width: 750px) {
+	.Tilmeld__container__back-button{
+		display: none;
+	}
 }

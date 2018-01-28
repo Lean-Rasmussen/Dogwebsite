@@ -41,7 +41,6 @@
 }
 @media (min-width: 750px) {
 .hunde-train__general-info__bobble-container{
-
 	grid-template-columns: repeat(4, 1fr);
 	}
 }
@@ -62,8 +61,8 @@
 }
 @media (min-width: 750px) {
 	.hunde-train__general-info__booble{
-	width: 175px;
-	height: 175px;
+	width: 150px;
+	height: 150px;
 	}
 }
 
@@ -74,6 +73,13 @@
 .hunde-train__general-info__booble__text{
 	position: relative;
 	top: 15%;
+}
+@media (min-width: 750px) { 
+	.hunde-train__general-info__booble__text{
+	position: relative;
+	top: 25%;
+	}
+
 }
 
 /* Hunde traening Pupp treaning*/
