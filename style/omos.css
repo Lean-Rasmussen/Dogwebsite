@@ -26,6 +26,7 @@
 	.omos__img{
 		grid-area: 2/3/3/4;
 		max-height: 400px;
+		max-width: 250px;
 	}
 }
 
@@ -41,7 +42,7 @@
 
 .omos_text{
 	grid-area: 2/2/3/3;
-	color: black;
+	color: #666;
 	text-align: left;
 	overflow-wrap: break-word;
 	word-wrap: break-word;

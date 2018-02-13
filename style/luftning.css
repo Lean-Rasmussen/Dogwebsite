@@ -5,8 +5,17 @@
 	grid-gap: 1em;
 
 }
+@media (min-width: 750px) { 
+	.luftning__container{
+		grid-template-columns: 40px 1fr 1fr 40px;
+	}
+}
 
-.luftning__img{
+@media (min-width: 1300px) { 
+
+}
+
+.luftning__img--mobi{
 	grid-area: 1/2/2/3;
 	width: 100%;
 	max-height: 175px;
@@ -14,6 +23,13 @@
 	margin:auto;
 	border-radius: 50%;
 }
+@media (min-width: 750px) { 
+	.luftning__img--mobi{
+		grid-area:1/3/3/4;
+		max-height: 300px;
+	}
+}
+
 
 .luftning_text{
 	grid-area: 2/2/3/3;
@@ -23,5 +39,9 @@
 	word-wrap: break-word;
 	hyphens: auto;
 	width:100%;
-
+}
+@media (min-width: 750px) { 
+	.luftning_text{
+		grid-area:1/2/3/3;
+	}
 }

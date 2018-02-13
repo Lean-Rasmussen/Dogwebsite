@@ -7,6 +7,9 @@
 
 @media (min-width: 750px) {
 	.hunde-train__container{
+	grid-template-columns: 40px	1fr 1fr 40px;
+	grid-template-rows: 40px 1fr 1fr 40px;
+
 	}
 }
 
@@ -79,38 +82,29 @@
 	position: relative;
 	top: 25%;
 	}
-
 }
-
 /* Hunde traening Pupp treaning*/
 .hunde-train__puppy__img{
 	grid-area: 1/2/2/3;
 	height: 100%; 
 	width: 100%; 
 	max-height: 175px;
-
 }
 @media (min-width: 750px) {
-	.hunde-train__puppy__img{
-	
-	}
-}
-
-@media (min-width: 1300px) { 
-	.hune-train__puppy__img{
-		grid-area: 2/2/3/4;
+	.hundet-train__puppy__img{
+		grid-area: 2/2/4/3;
+		max-height: 500px;
 	}
 }
 
 .hundet-train__puppy__text{
-	grid-area: 2/2/3/3;
+	grid-area: 2/2/3/4;
 }
 @media (min-width: 750px) {
 	.hundet-train__puppy__text{
-	
+		grid-area: 1/3/3/4;
 	}
 }
-
 @media (min-width: 1300px) { 
 	.hundet-train__puppy__text{
 		grid-area: 2/2/4/3;
@@ -123,12 +117,24 @@
 	width: 100%; 
 	max-height: 175px;
 }
+@media (min-width: 750px) {
+	.hundet-train__unge__img{
+		grid-area: 2/2/4/3;
+		max-height: 500px;
+	}
+}
 
 .hunde-train__unge__text{
 	grid-area: 1/2/2/3;
-
-
 }
+@media (min-width: 750px) {
+	.hundet-train__unge__text{
+		grid-area: 1/3/3/4;
+	}
+}
+
+
+
 /* Hunde traening Unge treaning*/
 
 .hunde-train__pro__img{
